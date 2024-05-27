@@ -1,11 +1,14 @@
-import { requireNativeViewManager } from 'expo-modules-core';
-import * as React from 'react';
+import * as React from "react";
+import { requireNativeComponent, ViewProps } from "react-native";
 
-import { MyRiveReactNativeViewProps } from './MyRiveReactNative.types';
+type RiveViewProps = ViewProps & {
+  resourceName: string;
+};
 
-const NativeView: React.ComponentType<MyRiveReactNativeViewProps> =
-  requireNativeViewManager('MyRiveReactNative');
+const RiveViewManager = requireNativeComponent<RiveViewProps>("RiveView");
 
-export default function MyRiveReactNativeView(props: MyRiveReactNativeViewProps) {
-  return <NativeView {...props} />;
-}
+const MyRiveReactNativeView: React.FC<RiveViewProps> = (props) => {
+  return <RiveViewManager {...props} />;
+};
+
+export default MyRiveReactNativeView;

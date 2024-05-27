@@ -1,20 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
-
-import * as MyRiveReactNative from 'my-rive-react-native';
+import { MyRiveReactNativeView } from "my-rive-react-native";
+import { View } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>{MyRiveReactNative.hello()}</Text>
+    <View style={{ flex: 1 }}>
+      <MyRiveReactNativeView resourceName="teddy" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
