@@ -1,3 +1,5 @@
-// import MyRiveReactNativeView from "./MyRiveReactNativeView";
+import MyRiveReactNativeModule from "./MyRiveReactNativeModule";
 
-// export { MyRiveReactNativeView };
+export function hello_dahee(): string {
+  return MyRiveReactNativeModule.hello_dahee();
+}
