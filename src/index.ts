@@ -1,3 +1,3 @@
-import MyRiveReactNativeView from "./MyRiveReactNativeView";
+// import MyRiveReactNativeView from "./MyRiveReactNativeView";
 
-export { MyRiveReactNativeView };
+// export { MyRiveReactNativeView };
