@@ -10,7 +10,7 @@ RCT_EXPORT_VIEW_PROPERTY(resourceName, NSString)
 RCT_EXPORT_MODULE()
 
 - (UIView *)view {
-  return [[RiveView alloc] init];
+  return [[MyRiveReactNativeView alloc] init];
 }
 
 @end
