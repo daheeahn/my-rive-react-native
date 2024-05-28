@@ -1,14 +1,14 @@
-import * as React from "react";
-import { requireNativeComponent, ViewProps } from "react-native";
+// import * as React from "react";
+// import { requireNativeComponent, ViewProps } from "react-native";
 
-type RiveViewProps = ViewProps & {
-  resourceName: string;
-};
+// type RiveViewProps = ViewProps & {
+//   resourceName: string;
+// };
 
-const RiveViewManager = requireNativeComponent<RiveViewProps>("RiveView");
+// const RiveViewManager = requireNativeComponent<RiveViewProps>("RiveView");
 
-const MyRiveReactNativeView: React.FC<RiveViewProps> = (props) => {
-  return <RiveViewManager {...props} />;
-};
+// const MyRiveReactNativeView: React.FC<RiveViewProps> = (props) => {
+//   return <RiveViewManager {...props} />;
+// };
 
-export default MyRiveReactNativeView;
+// export default MyRiveReactNativeView;
